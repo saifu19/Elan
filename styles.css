@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    /* padding: 20vh 0; */
+}
+#mainCar {
+    width: 80vw;
+    /* min-height: 80vh; */
+    display: flex;
+    align-items: center;
+}
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+.p-relative {
+    position: relative;
+}
+.blue-div {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #075FE7;
+    z-index: -1;
+}
+.car-blue {
+    border-left: 20px solid #075FE7;
+}
+.car-green {
+    border-left: 20px solid #557244;
+}
+.car-purple {
+    border-left: 20px solid #4A3F81;
+}
+.car-maroon {
+    border-left: 20px solid #7E2E31;
+}
+.slide-header {
+    border-bottom: 3px solid #075FE7;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.blue-card {
+    background-color: #075FE7;
+    color: white;
+    padding: 10px;
+}
+.ref-blue {
+    color: #7193BE;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    /* position: absolute; */
+}
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+     /* position: absolute; */
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+.slide2-row img {
+    width: 40% !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.slide4-logo {
+    width: 40% !important;
+}
+.slide5-img-container .col-6 {
+    position: relative;
+    height: 100%;
+    padding: 0 10px 10px 0 !important;
+}
+.slide5-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    margin-bottom: 0;
+    color: white;
+    transition: all 1s;
+}
+@media screen and (max-width: 992px) {
+    body {
+        padding: 10vh 0;
+    }
+    .carousel-item {
+        padding: 0 5vw;
+    }
+}
