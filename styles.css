@@ -1,17 +1,26 @@
+@font-face {
+    font-family: bankCircular;
+    src: url('U.S.BankCircularWeb-Regular.woff');
+}
+* {
+    font-family: bankCircular !important;
+}
 body {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     justify-content: center;
     /* padding: 20vh 0; */
 }
 #mainCar {
     width: 80vw;
-    /* min-height: 80vh; */
+    max-height: 80vh;
     display: flex;
     align-items: center;
 }
 .owl-stage {
+    max-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -52,17 +61,17 @@ body {
     color: #7193BE;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 small {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .fs-large {
     text-transform: capitalize;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 .fs-big {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
