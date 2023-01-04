@@ -11,16 +11,42 @@ body {
     height: 100vh;
     max-height: 100vh;
     justify-content: center;
+    background-color: #D5D5D5;
     /* padding: 20vh 0; */
 }
 #mainCar {
-    width: 80vw;
-    max-height: 80vh;
+    width: 90vw;
+    height: 80vh;
     display: flex;
     align-items: center;
+    background-color: white;
+}
+.car-main {
+    max-height: 80vh;
+    min-height: 80vh;
+    width: 90vw;
+    position: relative;
+}
+a::after {
+    background-image: url('ecc.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 100px; 
+    height: 40px;
+    content:"";
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.owl-stage-outer {
+    /* width: 100vw !important; */
+    max-height: 80vh !important;
 }
 .owl-stage {
-    max-height: 100vh;
+    /* width: 90vw !important; */
+    max-height: 80vh !important;
+    min-height: 80vh !important;
     display: flex;
     align-items: center;
 }
@@ -36,16 +62,20 @@ body {
     z-index: -1;
 }
 .car-blue {
-    border-left: 20px solid #075FE7;
+    border-left: 60px solid #075FE7;
+    height: 80vh !important;
 }
 .car-green {
-    border-left: 20px solid #557244;
+    border-left: 60px solid #557244;
+    height: 80vh !important;
 }
 .car-purple {
-    border-left: 20px solid #4A3F81;
+    border-left: 60px solid #4A3F81;
+    height: 80vh !important;
 }
 .car-maroon {
-    border-left: 20px solid #7E2E31;
+    border-left: 60px solid #7E2E31;
+    height: 80vh !important;
 }
 .slide-header {
     border-bottom: 3px solid #075FE7;
@@ -60,18 +90,31 @@ body {
 .ref-blue {
     color: #7193BE;
 }
-p {
+/* p {
     font-size: 1.3rem;
 }
 small {
     font-size: 1.1rem;
+} */
+.masonry-item {
+    width: 25% !important;
 }
 .fs-large {
     text-transform: capitalize;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .fs-big {
+    padding-top: 20px;
     font-size: 3rem;
+}
+.heading-container {
+    padding-top: 20px;
+}
+.carousel-indicators {
+    bottom: -50px !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 5vw !important;
 }
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -84,10 +127,23 @@ small {
 .carousel-indicators [data-bs-target] {
     background-color: black;
 }
-.slide2-row img {
-    width: 40% !important;
-    margin-left: 40px;
-    margin-bottom: 20px;
+.slide1-img {
+    border-radius: 0 0 0 30%;
+}
+.rounded-1 {
+    border-top-left-radius: 20px !important;
+}
+.rounded-2 {
+    border-bottom-left-radius: 20px !important;
+}
+.rounded-3 {
+    border-bottom-right-radius: 20px !important;
+}
+.text-blue {
+    color: #075FE7 !important;
+}
+small, p {
+    color: black;
 }
 .slide4-logo {
     width: 40% !important;
