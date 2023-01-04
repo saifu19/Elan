@@ -4,6 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
         <!-- Owl Carousel CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -19,6 +20,98 @@
         <link href="assets/vendor/prism/prism.css" rel="stylesheet" type="text/css" media="all">
         <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
         <link rel="stylesheet" href="styles.css">
+        
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {
+                'packages': ['geochart'],
+                'mapsApiKey': 'AIzaSyB0UgNoPT6UOiZb_3U_9hK2UgXe74MUWdw'
+            });
+            google.charts.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Zip Code', {role: 'tooltip', p:{html:true}}],
+                    ["52730","<h3>Camanche</h3><a href='https://1stgateway.elancharitablegiving.com'>1st Gateway Credit Union</a>"],
+                    ["52641","<h3>Mount Pleasant</h3><a href='https://5starcu.elancharitablegiving.com'>5 Star Community Credit Union</a>"],
+                    ["79106","<h3>Amarillo</h3><a href='https://acfcu.elancharitablegiving.com'>ACFCU</a>"],
+                    ["21502","<h3>La Vale</h3><a href='https://act1stfcu.elancharitablegiving.com'>ACT 1st Federal Credit Union</a>"],
+                    ["32246","<h3>Jacksonville</h3><a href='https://alivecu.elancharitablegiving.com'>Alive Credit Union</a>"],
+                    ["29201","<h3>Columbia</h3><a href='https://allsouth.elancharitablegiving.com'>All South Federal Credit Union</a>"],
+                    ["2719","<h3>Fairhaven</h3><a href='https://https,//alltrust.elancharitablegiving.com/'>Alltrust Credit Union</a>"],
+                    ["45014","<h3>Fairfield</h3><a href='https://aurgroup.elancharitablegiving.com'>Aurgroup Financial Credit Union</a>"],
+                    ["85004","<h3>Phoenix</h3><a href='https://bannerfcu.elancharitablegiving.com'>Banner Federal Credit Union</a>"],
+                    ["01901","<h3>Lynn</h3><a href='https://brotherhoodcu.elancharitablegiving.com'>Brotherhood Credit Union</a>"],
+                    ["93955","<h3>Seaside</h3><a href='https://centcoastfcu.elancharitablegiving.com'>Central Coast Federal Credit Union</a>"],
+                    ["54403","<h3>Wausau</h3><a href='https://ccuwausau.elancharitablegiving.com'>Cloverbelt Credit Union</a>"],
+                    ["52501","<h3>Ottumwa</h3><a href='https://c1stcreditunion.elancharitablegiving.com'>Community 1st Credit Union</a>"],
+                    ["44622","<h3>Dover</h3><a href='https://dpfcu.elancharitablegiving.com'>DoverPhila Federal Credit Union</a>"],
+                    ["26554","<h3>Fairmont</h3><a href='https://fairmontfcu.elancharitablegiving.com'>Fairmont Federal Credit Union</a>"],
+                    ["89447","<h3>Yerington</h3><a href='https://fhcunv.elancharitablegiving.com'>Financial Horizons Credit Union</a>"],
+                    ["33406","<h3>Palm Springs</h3><a href='https://gcfcu.elancharitablegiving.com'>Gold Coast Federal Credit Union</a>"],
+                    ["89701","<h3>Carson City</h3><a href='https://gncu.elancharitablegiving.com'>Greater Nevada Credit Union</a>"],
+                    ["98499","<h3>Lakewood</h3><a href='https://harborstone.elancharitablegiving.com'>Harborstone Credit Union</a>"],
+                    ["76712","<h3>Waco</h3><a href='https://hotfcu.elancharitablegiving.com'>Heart O' TX Federal Credit Union</a>"],
+                    ["95827","<h3>Sacramento</h3><a href='https://heritageccu.elancharitablegiving.com'>Heritage Community Credit Union</a>"],
+                    ["46013","<h3>Anderson</h3><a href='https://lampco.elancharitablegiving.com'>Lampco Federal Credit Union</a>"],
+                    ["4106","<h3>South Portland</h3><a href='https://mesolutionsfcu.elancharitablegiving.com'>Maine Solutions Federal Credit Union</a>"],
+                    ["54603","<h3>La Crosse</h3><a href='https://marinecu.elancharitablegiving.com'>Marine Credit Union</a>"],
+                    ["63028","<h3>Festus</h3><a href='https://me1stcu.elancharitablegiving.com'>Members 1st Credit Union</a>"],
+                    ["52761","<h3>Muscatine</h3><a href='https://memberscommunitycu.elancharitablegiving.com'>Members Community Credit Union</a>"],
+                    ["95123","<h3>San Jose</h3><a href='https://meriwest.elancharitablegiving.com'>Meriwest Credit Union</a>"],
+                    ["52404","<h3>Cedar Rapids</h3><a href='https://metcocu.elancharitablegiving.com'>Metco Credit Union</a>"],
+                    ["83686","<h3>Nampa</h3><a href='https://mynccu.elancharitablegiving.com'>Northwest Christian Credit Union</a>"],
+                    ["53202","<h3>Milwaukee</h3><a href='https://mynmcu.elancharitablegiving.com'>Northwestern Mutual Credit Union</a>"],
+                    ["60436","<h3>Joliet</h3><a href='https://numarkcu.elancharitablegiving.com'>NuMark Credit Union</a>"],
+                    ["91107","<h3>Pasadena</h3><a href='https://mypsfcu.elancharitablegiving.com'>Pasadena Service Federal Credit Union</a>"],
+                    ["19145","<h3>Philadelphia </h3><a href='https://phillycreditunion.elancharitablegiving.com'>Philadelphia Letter Carriers Federal Credit Union</a>"],
+                    ["43302","<h3>Marion </h3><a href='https://pillarcu.elancharitablegiving.com'>Pillar Credit Union, Inc</a>"],
+                    ["30308","<h3>Atlanta</h3><a href='https://pinnaclecu.elancharitablegiving.com'>Pinnacle Credit Union</a>"],
+                    ["79119","<h3>Amarillo</h3><a href='https://santafefcu.elancharitablegiving.com'>Santa Fe Federal Credit Union</a>"],
+                    ["29707","<h3>Indian Land</h3><a href='https://sharonview.elancharitablegiving.com'>Sharonview Federal Credit Union</a>"],
+                    ["72206","<h3>Little Rock</h3><a href='https://southerngasfcu.elancharitablegiving.com'>Southern Gas Federal Credit Union</a>"],
+                    ["63108","<h3>Saint Louis</h3><a href='https://stlouiscommunity.elancharitablegiving.com'>St. Louis Community Credit Union</a>"],
+                    ["44311","<h3>Akron</h3><a href='https://summitfcu.elancharitablegiving.com'>Summit Federal Credit Union</a>"],
+                    ["54880","<h3>Superior</h3><a href='https://superiorchoice.elancharitablegiving.com'>Superior Choice Credit Union</a>"],
+                    ["02780","<h3>Taunton</h3><a href='https://tauntonfcu.elancharitablegiving.com'>Taunton Federal Credit Union</a>"],
+                    ["37402","<h3>Chattanooga</h3><a href='https://tvfcu.elancharitablegiving.com'>Tennessee Valley Federal Credit Union</a>"],
+                    ["82901","<h3>Rock Springs</h3><a href='https://tronavalley.elancharitablegiving.com'>Trona Valley Community Federal Credit Union</a>"],
+                    ["75701","<h3>Tyler</h3><a href='https://tylercityecu.elancharitablegiving.com'>Tyler City Employees Credit Union</a>"],
+                    ["15904","<h3>Johnstown </h3><a href='https://usscofcu.elancharitablegiving.com'>USSCO Federal Credit Union</a>"],
+                    ["72205","<h3>Little Rock</h3><a href='https://vahospitalfcu.elancharitablegiving.com'>VA Hospital Federal Credit Union</a>"],
+                    ["55075","<h3>South Saint Paul</h3><a href='https://wakotafcu.elancharitablegiving.com'>Wakota Federal Credit Union</a>"],
+                    ["21523","<h3>Bloomington</h3><a href='https://wepcofcu.elancharitablegiving.com'>WEPCO Federal Credit Union</a>"],
+                    ["816","<h3>Littleton</h3><a href='https://wcu.elancharitablegiving.com'>Workers Credit Union</a>"],
+                    ["06473","<h3>North Haven </h3><a href='https://https,//elancharitablegiving.com/credit-union-day'>Connex Credit Union</a>"],
+                    ["85053","<h3>Phoenix</h3><a href='https://https,//elancharitablegiving.com/credit-union-day'>Copper State Credit Union</a>"],
+                    ["01527","<h3>Millbury</h3><a href='https://https,//elancharitablegiving.com/credit-union-day'>Millbury Credit Union </a>"],
+                    ["01752","<h3>Marlborough</h3><a href='https://https,//elancharitablegiving.com/credit-union-day'>St. Mary's Credit Union</a>"],
+                    ["76306","<h3>Wichita Falls</h3><a href='https://https,//elancharitablegiving.com/credit-union-day'>Texoma Community Credit Union</a>"],
+                ]);
+
+                var options = {
+                    region: 'US',
+                    displayMode: 'markers',
+                    resolution: 'provinces',
+                    
+                    colorAxis: {colors: ['#00853f', 'black', '#e31b23']},
+                    backgroundColor: '#ffffff',
+                    datalessRegionColor: 'blue',
+                    defaultColor: '#f5f5f5',
+                    enableRegionInteractivity: 'true',
+                    tooltip: {
+                        isHtml: true,
+                        trigger: 'selection'
+                    }
+                };
+
+                var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+                chart.draw(data, options);
+                
+            }
+        </script>
     </head>
     <body>
         <div id="mainCar" class="owl-carousel">
@@ -34,6 +127,7 @@
                         <div class="blue-div"></div>
                     </div>
                 </div>
+                
             </div>
             <div class="item car-main">
                 <div class="car-blue ps-5">
@@ -57,15 +151,16 @@
                         </div>
                         <div class="col-3">
                             <div class="blue-card">
-                                <h1 class="text-white">$725k+</h1>
+                                <h1 class="text-white d-flex">$<div class="counter purecounter" data-purecounter-delay="50" data-purecounter-start="0" data-purecounter-end="720">0</div>k+</h1>
+                                
                                 <p>Donated</p>
                             </div>
                             <div class="blue-card">
-                                <h1 class="text-white">61</h1>
+                                <h1 class="text-white"><div class="counter purecounter" data-purecounter-delay="50" data-purecounter-start="0" data-purecounter-end="56">0</div></h1>
                                 <p>Non-Profit Beneficiaries</p>
                             </div>
                             <div class="blue-card">
-                                <h1 class="text-white">60</h1>
+                                <h1 class="text-white"><div class="counter purecounter" data-purecounter-delay="50" data-purecounter-start="0" data-purecounter-end="75">0</div></h1>
                                 <p>Hours Volunteered</p>
                             </div>
                         </div>
@@ -289,6 +384,8 @@
             <div class="item car-main">
                 <div class="car-blue ps-5">
                     <h1 class="fs-big">Credit Union Partners & Charity Recipients</h1>
+
+                    <div id="regions_div" style="width: 90%; height: 50vh;"></div>
                 </div>
             </div>
             <div class="item car-main">
@@ -304,11 +401,8 @@
                                 <img src="https://elancharitable.s3.amazonaws.com/images-3/1648937352126635027-media.png" style="width: 150px">
                             </div>
 
-                            <p class="fw-bold">
-                                1,100 Backpacks Packed+ 117,500 pounds of food donated across 24 counties in NC and SC 
-                            </p>
                             <small>
-                                Many children do not have access to food outside of school hours. Second Harvest Food Bank of Metrolina's backpack program provides school-aged children a backpack of nutritious, easy-to­prepare items for the weekends and holidays. Together, Elan and Sharonview volunteered to pack 1,100 backpacks.
+                                "The number one goal at Second Harvest is to end child hunder. With over 168,000 children in out region at risk of hunger everyday, this money will primarily go to out initiatives that fall under this goal."
                             </small>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center">
@@ -330,15 +424,12 @@
                                 <img src="https://elancharitable.s3.amazonaws.com/images-3/1648940218558506249-media.png" style="width: 150px">
                             </div>
                             
-                            <p class="fw-bold">
-                                100 Emergency Food Boxes Packed for Community
-                            </p>
                             <small>
-                                Elan joined credit card partner Wakota Federal Credit Union to volunteer at Neighbors, Inc. to pack emergency food boxes for those in need. The nonprofit was also presented with an additional $5,000 gift, totaling $17,500, to help fund all their work to end hunger. In addition to their food shelf, Neighbors, Inc. has a thrift store and offers guidance through their Financial Empowerment Program.
+                                "Your gift helps us provide essential services to our neighbours in need. We are commemorating 50 years of serving our community this year. It is because of community partners like Elan Financial Services and Wakota Federal Credit Union that we are able to continue doing this important work".
                             </small>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center">
-                            <img src="https://elancharitable.s3.amazonaws.com/new-pages/1665001159302479804-media.jpg">
+                            <iframe src="https://player.vimeo.com/video/708635428" class="img-fluid" style="padding-top:15px; height: 80%; width: 80%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -356,15 +447,12 @@
                                 <img src="https://elancharitable.s3.amazonaws.com/images-3/16489259531675526290-media.png" style="width: 150px">
                             </div>
 
-                            <p class="fw-bold">
-                                Supporting classrooms with supplies for success
-                            </p>
                             <small>
-                                During a volunteer event at Education Foundation of Palm Beach County, Elan and Gold Coast Federal Credit Union staff surprised the non-profit with an additional $5,000 gift to further their inspiring work. The $17,500 total donation will support the Red Apple Supplies program and will provide free educational supplies to 53 classrooms.
+                                "One of the hallmarks of the credit union industry is involvement in the community and working with charities. In 2021, we established the Gold Coast Cares initiative and selected Education Foundation of Palm Beach COuntry as of our signature partners."
                             </small>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center">
-                            <img src="https://elancharitable.s3.amazonaws.com/gcfcu/1652106402428543687-media.jpg">
+                            <iframe src="https://player.vimeo.com/video/708635428" class="img-fluid" style="padding-top:15px; height: 80%; width: 80%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -375,22 +463,19 @@
                         <img class="me-3" src="https://gcfcu.elancharitablegiving.com/elan/images/ELAN-21-484%20Charitable%20Giving%20V5%201.png" style="width: 200px">
                         <h1 class="fs-big">Community Impact</h1>
                     </div>
-                    <div class="row mt-3">
+                    <div class="row mt-5">
                         <div class="col-6">
                             <div class="d-flex mb-5 align-items-center">
                                 <img class="me-4" src="https://elancharitable.s3.amazonaws.com/images-3/16489406101424777480-media.png" style="width: 40%; height: max-content;">
-                                <img src="https://elancharitable.s3.amazonaws.com/new-pages/1663869734366311219-media.png" style="width: 150px">
+                                <img src="https://elancharitable.s3.amazonaws.com/images-3/1648940879533484443-media.png" style="width: 150px">
                             </div>
 
-                            <p class="fw-bold">
-                                Shelter and support for 4,000 homeless
-                            </p>
                             <small>
-                                The $12,500 Across the Country helped Our Father's House continue to serve the approximately 4,000 homeless men, women, and children in North Worcester County on behalf of our partner, Worker's Credit Union. During a volunteer event in October, Elan and Workers Credit Union presented an additional $5,000 donation to further their mission.
+                                "With this donation, we will be able to continue addressing homelessness in North Central Massachussetts by funding our numerous services, including: Emergency shelter and support when possible and practical; individual support and guidance to encourage and assist our clients in becoming self-sufficient; and access to basic needs through our community food pantry."
                             </small>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center">
-                            <img src="https://elancharitable.s3.amazonaws.com/sharonview/16546065891143833129-media.jpg">
+                            <iframe src="https://player.vimeo.com/video/708635428" class="img-fluid" style="padding-top:15px; height: 80%; width: 80%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -408,7 +493,7 @@
                                 "What's important to our credit union partners is important to us, and we want to invest in those things and help." 
                             </small>
                             <small class="ref-blue">
-                                - Aaron Melnarik
+                                - Aaron Melnarik, Vice President, Director of Clients Relationship
                             </small>
                         </div>
                         <div class="col-1"></div>
@@ -418,11 +503,11 @@
                             </small>
                             <br>
                             <small>
-                                Elan and PYMNTS charitable giving report• shows that nearly 75% of consumers give to charity and want their financial institutions (Fis) to give as well. Consumers' desire to see their Fl support local charities is strong enough that 30% would move their accounts to a different Fl if their current one did not donate. Learning more about how charitable giving affects where consumers do business may help build your member base. 
+                               <span class="ref-blue">Elan and PYMNTS charitable giving report•</span> shows that nearly 75% of consumers give to charity and want their financial institutions (Fis) to give as well. Consumers' desire to see their Fl support local charities is strong enough that 30% would move their accounts to a different Fl if their current one did not donate. 
                             </small>
                             <br>
                             <small>
-                                A partnership with Elan is more than a business relationship. We can support your growth strategy with desired products, marketing, and cutting-edge payments solutions.Elan partners with credit unions to provide an outsourced credit card program, mortgage solutions, and merchant processing services. Our dedication to our partners, growth philosophy, and investment in technology has made us a leader in the industry since 1968. www.cupartnership.com 
+                                A partnership with Elan is more than a business relationship. We can support your growth strategy with desired products, marketing, and cutting-edge payments solutions. Elan partners with credit unions to provide an outsourced credit card program, mortgage solutions, and merchant processing services. Visit <a href="www.cupartnership.com">www.cupartnership.com</a> to learn more.
                             </small>
                         </div>
                     </div>
@@ -443,6 +528,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="assets/vendor/purecounterjs/dist/purecounter.js"></script>
         <script>
             $(document).ready(function() {
                 $('.owl-carousel').owlCarousel({
